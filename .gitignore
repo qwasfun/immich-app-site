@@ -1,2 +1,5 @@
 /library
 /postgres
+/geodata/*
+!/geodata/update.sh
+/i18n-iso-countries

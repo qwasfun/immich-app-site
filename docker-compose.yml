@@ -20,6 +20,8 @@ services:
       # Do not edit the next line. If you want to change the media storage location on your system, edit the value of UPLOAD_LOCATION in the .env file
       - ${UPLOAD_LOCATION}:/usr/src/app/upload
       - /etc/localtime:/etc/localtime:ro
+      - ./geodata:/build/geodata
+      - ./i18n-iso-countries/langs:/usr/src/app/server/node_modules/i18n-iso-countries/langs
     env_file:
       - .env
     ports:
