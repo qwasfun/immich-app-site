@@ -7,7 +7,7 @@
 ### 下载 i18n-iso-countries.zip
 
 ```bash
-curl -o i18n-iso-countries.zip https://github.com/ZingLix/immich-geodata-cn/releases/download/auto-release/i18n-iso-countries.zip
+curl -L -o i18n-iso-countries.zip https://github.com/ZingLix/immich-geodata-cn/releases/download/auto-release/i18n-iso-countries.zip
 unzip i18n-iso-countries.zip
 ```
 
@@ -28,5 +28,5 @@ bash update.sh geodata_admin_2_admin_3
 ### 重启 Immich
 
 ```bash
-docker compose down && docker compose up
+sudo docker compose down && sudo docker compose up -d
 ```
