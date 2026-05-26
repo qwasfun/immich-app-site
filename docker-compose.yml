@@ -23,7 +23,7 @@ services:
       - ./geodata:/build/geodata
       - ./i18n-iso-countries/langs:/usr/src/app/server/node_modules/i18n-iso-countries/langs
       # External Library
-      - ./external-library:/external-library:ro
+      - ./external-library:/external-library
     env_file:
       - .env
     ports:
