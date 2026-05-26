@@ -1,4 +1,4 @@
-# immich-app-site
+# immich-docker-compose
 
 ## Immich 反向地理编码汉化
 
