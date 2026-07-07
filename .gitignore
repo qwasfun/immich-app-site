@@ -1,4 +1,8 @@
+/appdata
 /library
+/internal-library
+/external-library
+
 /postgres
 /geodata/*
 !/geodata/update.sh

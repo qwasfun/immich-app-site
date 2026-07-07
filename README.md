@@ -1,4 +1,4 @@
-# immich-app-site
+# immich-docker-compose
 
 ## Immich 反向地理编码汉化
 
@@ -7,6 +7,8 @@
 ### 下载 i18n-iso-countries.zip
 
 ```bash
+# 在项目根目录下操作
+
 curl -L -o i18n-iso-countries.zip https://github.com/ZingLix/immich-geodata-cn/releases/download/auto-release/i18n-iso-countries.zip
 unzip i18n-iso-countries.zip
 ```
@@ -29,4 +31,41 @@ bash update.sh geodata_admin_2_admin_3
 
 ```bash
 sudo docker compose down && sudo docker compose up -d
+```
+
+### 目录结构
+
+```text
+├── Immich
+    ├── appdata
+    │   ├── postgres
+    │   └── model-cache
+    │
+    ├── geodata
+    ├── i18n-iso-countries
+    │   └── langs
+    │
+    └── library
+        ├── internal-library
+        │   ├── backups
+        │   ├── encoded-video
+        │   ├── library
+        │   ├── profile
+        │   ├── thumbs
+        │   └── upload
+        │
+        └── external-library
+            ├── Travel
+            │   ├── 2026-05 长沙旅行
+            │
+            ├── DJI-Action
+            │   ├── 骑行
+            │
+            ├── Life
+            │   ├── 日常
+            │   ├── 健身
+            │
+            └── Edited
+                ├── Shorts
+                ├── Vlog
 ```
