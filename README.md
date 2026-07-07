@@ -45,26 +45,27 @@ sudo docker compose down && sudo docker compose up -d
     ├── i18n-iso-countries
     │   └── langs
     │
-    ├── internal-library
-    │   ├── backups
-    │   ├── encoded-video
-    │   ├── library
-    │   ├── profile
-    │   ├── thumbs
-    │   └── upload
-    │
-    └── external-library
-        ├── Travel
-        │   ├── 2026-05 长沙旅行
+    └── library
+        ├── internal-library
+        │   ├── backups
+        │   ├── encoded-video
+        │   ├── library
+        │   ├── profile
+        │   ├── thumbs
+        │   └── upload
         │
-        ├── DJI-Action
-        │   ├── 骑行
-        │
-        ├── Life
-        │   ├── 日常
-        │   ├── 健身
-        │
-        └── Edited
-            ├── Shorts
-            ├── Vlog
+        └── external-library
+            ├── Travel
+            │   ├── 2026-05 长沙旅行
+            │
+            ├── DJI-Action
+            │   ├── 骑行
+            │
+            ├── Life
+            │   ├── 日常
+            │   ├── 健身
+            │
+            └── Edited
+                ├── Shorts
+                ├── Vlog
 ```
