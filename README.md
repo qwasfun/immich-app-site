@@ -7,7 +7,7 @@
 ### 下载 i18n-iso-countries.zip
 
 ```bash
-# 在项目根目录下操作
+# 在 appdata 目录下操作
 
 curl -L -o i18n-iso-countries.zip https://github.com/ZingLix/immich-geodata-cn/releases/download/auto-release/i18n-iso-countries.zip
 unzip i18n-iso-countries.zip
@@ -36,36 +36,34 @@ sudo docker compose down && sudo docker compose up -d
 ### 目录结构
 
 ```text
-├── Immich
-    ├── appdata
-    │   ├── postgres
-    │   └── model-cache
-    │
-    ├── geodata
-    ├── i18n-iso-countries
-    │   └── langs
-    │
-    └── library
-        ├── internal-library
-        │   ├── backups
-        │   ├── encoded-video
-        │   ├── library
-        │   ├── profile
-        │   ├── thumbs
-        │   └── upload
-        │
-        └── external-library
-            ├── Travel
-            │   ├── 2026-05 长沙旅行
-            │
-            ├── DJI-Action
-            │   ├── 骑行
-            │
-            ├── Life
-            │   ├── 日常
-            │   ├── 健身
-            │
-            └── Edited
-                ├── Shorts
-                ├── Vlog
+├── appdata
+│   ├── model-cache
+│   ├── postgres
+│   ├── geodata
+│   └── i18n-iso-countries
+│       └─── langs
+├── immich-data
+│   ├── backups
+│   ├── encoded-video
+│   ├── library
+│   ├── profile
+│   ├── thumbs
+│   └── upload
+├── photos
+│   ├── Inbox
+│   ├── Travel
+│   │   └── 2026-05 长沙旅行
+│   │
+│   ├── DJI-Action
+│   │   └── 骑行
+│   │
+│   ├── Life
+│   │   ├── 日常
+│   │   └── 健身
+│   │
+│   └── Edited
+│        ├── Shorts
+│        └── Vlog
+├── docker-compose.yml
+└── README.md
 ```

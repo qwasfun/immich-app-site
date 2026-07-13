@@ -1,9 +1,10 @@
 /appdata
 /library
-/internal-library
-/external-library
+/immich-data
+/photos
 
-/postgres
-/geodata/*
-!/geodata/update.sh
-/i18n-iso-countries
+!/appdata/
+/appdata/*
+!/appdata/geodata/
+/appdata/geodata/*
+!/appdata/geodata/update.sh
